@@ -14,7 +14,7 @@ public class ObrestdatajpaApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(ObrestdatajpaApplication.class, args);
-		BookRepository repository = (BookRepository) context.getBean(Repository.class);
+		BookRepository repository = context.getBean(BookRepository.class);
 
 		// CRUD
 		// crear un libro
